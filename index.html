@@ -1,14 +1,30 @@
-<title>刺猬兽的小窝~</title>
-<style>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刺猬兽的小窝~</title>
+    <style>
         body {
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://t.alcy.cc/ai') no-repeat center center fixed; /* 替换为您的背景图URL */
+            position: relative; /* 使伪元素相对定位 */
+            overflow: hidden; /* 防止溢出 */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://t.alcy.cc/ai') no-repeat center center fixed; /* 背景图 */
             background-size: cover;
-            opacity: 0.7; /* 设置背景透明度，范围0-1 */
+            opacity: 0.4; /* 设置背景的透明度 */
+            z-index: -1; /* 让背景图在内容下面 */
         }
         .content {
             text-align: center;
@@ -17,11 +33,16 @@
             background-color: rgba(0, 0, 0, 0.5); /* 内容背景半透明 */
             padding: 20px;
             border-radius: 10px;
+            z-index: 1; /* 使内容在最上层 */
         }
     </style>
-<center>
-    <div style="text-align: center;"><img src="http://www.digimons.net/digimon/herissmon/herissmon.jpg" alt="刺猬兽"></div>
-    <h1>欢迎来到刺猬兽的小窝~</h1>
-</center>
-<script src="https://myhkw.cn/player/js/player.js" id="myhk" key="demo" m="1"></script>
-    
+</head>
+<body>
+    <div class="content">
+        <div style="text-align: center;"><img src="http://www.digimons.net/digimon/herissmon/herissmon.jpg" alt="刺猬兽"></div>
+        <h1>欢迎来到刺猬兽的小窝~</h1>
+        <a href="/about">关于我</a>
+        <h1>|</h1>
+        <a href="/list">知识宝库</a>
+</body>
+</html>
