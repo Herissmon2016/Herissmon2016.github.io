@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>刺猬兽的小窝~</title>
+    <title>刺猬兽的小窝-关于我</title>
     <style>
         body {
             margin: 0;
@@ -13,7 +13,6 @@
             align-items: center;
             position: relative; /* 使伪元素相对定位 */
             overflow: hidden; /* 防止溢出 */
-            background-color: #f0f0f0; /* 备选背景颜色 */
         }
         body::before {
             content: "";
@@ -22,7 +21,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('https://t.alcy.cc/ai'); /* 确保这个链接是公开可用的 */
+            background-image: url('https://t.alcy.cc/ai'); /* 使用 background-image 属性 */
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed; /* 固定背景 */
@@ -36,8 +35,14 @@
             padding: 20px;
             border-radius: 10px;
             z-index: 1; /* 使内容在最上层 */
-            background-color: rgba(255, 255, 255, 0.7); /* 内容背景为浅颜色 */
-            opacity: 0.9; /* 设置内容区域透明度 */
+        }
+        a {
+            color: black; /* 修改链接颜色为黑色 */
+            text-decoration: none; /* 去掉下划线 */
+            margin: 0 10px; /* 链接之间的间距 */
+        }
+        a:hover {
+            text-decoration: underline; /* 悬停时添加下划线 */
         }
     </style>
 </head>
