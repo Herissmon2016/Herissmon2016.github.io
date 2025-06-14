@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>刺猬兽的小窝-关于我?</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative; /* 使伪元素相对定位 */
-            overflow: hidden; /* 防止溢出 */
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://t.alcy.cc/ai'); /* 使用背景图 */
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed; /* 固定背景 */
-            background-size: cover;
-            opacity: 0.7; /* 设置背景透明度 */
-            z-index: -1; /* 让背景图在内容下面 */
-        }
-        .content {
-            text-align: center;
-            color: black; /* 修改文字颜色为黑色 */
-            font-size: 24px;
-            background-color: rgba(255, 255, 255, 0.9); /* 修改内容背景为更浅的颜色 */
-            padding: 20px;
-            border-radius: 10px;
-            z-index: 1; /* 使内容在最上层 */
-        }
-        a {
-            color: black; /* 链接颜色为黑色 */
-            text-decoration: none; /* 去掉下划线 */
-        }
-        a:hover {
-            text-decoration: underline; /* 悬停时添加下划线 */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刺猬兽的小窝~</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* 使伪元素相对定位 */
+            overflow: hidden; /* 防止溢出 */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://t.alcy.cc/ai'); /* 使用背景图 */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* 固定背景 */
+            background-size: cover;
+            z-index: -1; /* 让背景图在内容下面 */
+        }
+        .content {
+            text-align: center;
+            color: black; /* 修改文字颜色为黑色 */
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1; /* 使内容在最上层 */
+            background-color: rgba(255, 255, 255, 0.7); /* 内容背景为浅颜色 */
+            opacity: 0.9; /* 设置内容区域透明度 */
+        }
+        a {
+            color: black; /* 修改链接颜色为黑色 */
+            text-decoration: none; /* 去掉下划线 */
+            margin: 0 10px; /* 链接之间的间距 */
+        }
+        a:hover {
+            text-decoration: underline; /* 悬停时添加下划线 */
+        }
+    </style>
 </head>
 <body>
-    <div class="content">
-        <center>
-        Q:你是谁？
-        <br>
-        A:一只小小的刺猬兽而已～
-        <br>
-        Q:这个博客是关于什么的?
-        <br>
-        A:主要是来记录我在技术方面上的点点滴滴吖～
-        <br>
-        Q:你擅长哪些领域?
-        <br>
-        A:Linux、Windows、IPTV和python之类的我都比较擅长的吖~
-        <br>
-        Q:我想联系到你，有无联系方式？
-        <br>
-        A:有的！你可以通过我博客的<a href="https://github.com/Herissmon2016/Herissmon2016.github.io/issues">github仓库</a>
-        提交issues联系到我，也可以利用QQ和TG联系我~（QQ号：505906993 TG:@Herissmon）
-        </center>
-    </div>
+    <div class="content">
+        <p>Q:你是谁？</p>
+        <p>A:一只小小的刺猬兽而已～</p>
+        <p>Q:这个博客是关于什么的?</p>
+        <p>A:主要是来记录我在技术方面上的点点滴滴吖～</p>
+        <p>Q:你擅长哪些领域?</p>
+        <p>A:Linux、Windows、IPTV和python之类的我都比较擅长的吖~</p>
+        <p>Q:我想联系到你，有无联系方式？</p>
+        <p>A:有的！你可以通过我博客的<a href="https://github.com/Herissmon2016/Herissmon2016.github.io/issues">github仓库</a>提交issues联系到我，也可以利用QQ和TG联系我~（QQ号：505906993 TG:@Herissmon）</p>
+    </div>
 </body>
 </html>
