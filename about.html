@@ -11,8 +11,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative; /* 使伪元素相对定位 */
-            overflow: hidden; /* 防止溢出 */
+            position: relative;
+            overflow: hidden;
         }
         body::before {
             content: "";
@@ -21,28 +21,28 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('https://t.alcy.cc/ai'); /* 使用 background-image 属性 */
+            background-image: url('https://t.alcy.cc/ai');
             background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed; /* 固定背景 */
+            background-position: center;
             background-size: cover;
-            z-index: -1; /* 让背景图在内容下面 */
+            z-index: -1;
         }
         .content {
             text-align: center;
-            color: black; /* 修改文字颜色为黑色 */
+            color: black;
             font-size: 24px;
             padding: 20px;
             border-radius: 10px;
-            z-index: 1; /* 使内容在最上层 */
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.8); /* 可选：增加背景透明度 */
         }
         a {
-            color: black; /* 修改链接颜色为黑色 */
-            text-decoration: none; /* 去掉下划线 */
-            margin: 0 10px; /* 链接之间的间距 */
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
         }
         a:hover {
-            text-decoration: underline; /* 悬停时添加下划线 */
+            text-decoration: underline;
         }
     </style>
 </head>
