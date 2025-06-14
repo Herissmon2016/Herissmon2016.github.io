@@ -27,15 +27,17 @@
         }
         .content {
             text-align: center;
-            color: white;
+            color: black; /* 修改字体颜色为黑色以适配白色背景 */
             font-size: 24px;
-            background-color: rgba(0, 0, 0, 0.7); /* 增加背景颜色的不透明度 */
+            background-color: white; /* 改为白色背景 */
             padding: 20px;
             border-radius: 10px;
             z-index: 1; /* 使内容在最上层 */
+            max-width: 90%; /* 确保内容适应屏幕宽度 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
         }
         a {
-            color: white; /* 链接颜色 */
+            color: black; /* 链接颜色 */
             text-decoration: none; /* 去掉下划线 */
             margin: 0 10px; /* 链接之间的间距 */
         }
@@ -51,7 +53,7 @@
         </div>
         <h1>欢迎来到刺猬兽的小窝~</h1>
         <a href="/about">关于我</a>
-        <hl>|</hl>
+        <span>|</span> <!-- 使用span替代hl -->
         <a href="/list">知识宝库</a>
     </div>
 </body>
